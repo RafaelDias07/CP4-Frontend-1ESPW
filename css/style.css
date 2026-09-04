@@ -1,0 +1,94 @@
+:root {
+    --color-black: #121212;
+    --color-off-white: #fff3ef;
+    --color-button: #b4aaa3;
+    --color-accent: #d98e73;
+    --color-text-light: #f5f0ee;
+    --font-main: 'Poppins', sans-serif;
+    --container-max-width: 1140px;
+    --section1-padding-y: 70px;
+    --section2-padding-x: 40px;
+    --gap-md: 20px;
+    --gap-sm: 12px;
+    --radius: 6px;
+    --transition: 0.3s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-main);
+    color: var(--color-black);
+    background-color: #ffffff;
+    line-height: 1.5;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-section {
+    background-color: var(--color-black);
+    padding: 0 20px;
+}
+
+.hero-container {
+    max-width: var(--container-max-width);
+    margin: 0 auto;
+    padding: var(--section1-padding-y) 0;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+        "imagem  imagem  imagem"
+        "text   gallery gallery";
+}
+
+.hero-texto {
+    grid-area: text;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 18px;
+    color: var(--color-text-light);
+}
+
+.hero-texto p {
+    font-size: 0.95rem;
+    font-weight: 300;
+    color: #d8d3d1;
+}
+
+.btn-saiba-mais {
+    background-color: var(--color-button);
+    color: var(--color-black);
+}
+
+.btn-saiba-mais:hover {
+    background-color: var(--color-accent);
+}
+
+.hero-imagem {
+    grid-area: imagem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.hero-imagem-item {
+    border-radius: var(--radius);
+    overflow: hidden;
+}
+
+.hero-imagem-item img {
+    transition: transform var(--transition);
+}
+
+.hero-imagem-item:hover img {
+    transform: scale(1);
+}

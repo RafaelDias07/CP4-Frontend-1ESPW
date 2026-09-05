@@ -5,32 +5,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CP4 - Grid Layout & Responsividade</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
 
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
 <body>
-    <section class="hero-section">
-        <div class="hero-container">
-            <div class="hero-imagem">
-                <img src="images/banner/03.jpg"
-                    alt="Vista bonita">
-            </div>
-            <div class="hero-texto">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla explicabo, quo, modi quod qui atque
-                    eaque repellendus est nisi voluptate facere.</p>
-                <button type="button" class="btn-saiba-mais">Saiba mais</button>
-            </div>
-            <div class="hero-imagem">
-                <div class="hero-imagem-item">
-                    <img src="images/banner/01.jpg"
-                        alt="Beco estreito">
-                </div>
-                <div class="hero-imagem-item">
-                    <img src="images/banner/02.jpg" alt="Igreja">
-                </div>
-                <div class="hero-imagem-item">
-                    <img src="images/banner/04.jpg" alt="Varanda azul">
+     <main>
+        <section id="apresentacao">
+            <div class="container">
+                <div class="grid-hero">
+
+                    <img src="./images/banner/01.jpg" alt="Porto tranquilo com um barco ancorado" class="imagem-destaque">
+
+                    <div class="caixa-texto">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla explicabo, quo, modi quod qui atque eaque repellendus est nisi voluptate facere.</p>
+
+                        <a href="#colecao" class="btn-galeria">Saiba Mais</a>
+                    </div>
+
+                    <img src="./images/banner/04.jpg" alt="Beco no caminho do mar" class="thumb thumb-1">
+                    <img src="./images/banner/03.jpg" alt="Igreja branca" class="thumb thumb-2">
+                    <img src="./images/banner/02.jpg" alt="Varanda azul com flores vermelhas em uma casa branca" class="thumb thumb-3">
                 </div>
             </div>
+        </section>
+
+        <section id="colecao" class="secao-fotos">
+            <div class="grid-fotos">
+                <img src="./images/sea/01.jpg" alt="Rochas na beira da praia com o mar ao fundo">
+                <img src="./images/sea/03.jpg" alt="Vista elevada do mar " class="destaque-alto">
+                <img src="./images/sea/01.jpg" alt="Ondas contornando as pedras da praia">
+                <img src="./images/sea/03.jpg" alt=" Mar visto de cima" class="destaque-alto">
+                <img src="./images/sea/01.jpg" alt="Costa de pedras">
+                <img src="./images/sea/02.jpg" alt="Caminho de madeira">
+                <img src="./images/sea/02.jpg" alt="Trilha de madeira">
+                <img src="./images/sea/02.jpg" alt="Caminho de madeira a praia">
         </div>
-    </section>
+
+        </section>
+    </main>
+</body>
+</html>
